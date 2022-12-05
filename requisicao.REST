@@ -1,0 +1,35 @@
+POST http://localhost:3003/signup
+Content-Type: application/json
+
+{
+    "name":"charlie",
+    "email":"charlie2@email.com",
+    "password": 123456
+}
+###
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+    "email":"charlie2@email.com",
+    "password": 123456
+}
+###
+GET  http://localhost:3003/user/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4ZDYyN2JkLWRlYzYtNGFkYi04NzdlLTIzNjYzNjJhODhjNyIsImlhdCI6MTY1NjcwMzM3NywiZXhwIjoxNjU2NzA2Mzc3fQ.l6HJ6RyQfQLFgogErcm78C8nZVBST_kLwUjhlLcwNGA
+###
+GET  http://localhost:3003/user/58d627bd-dec6-4adb-877e-2366362a88c7
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU4ZDYyN2JkLWRlYzYtNGFkYi04NzdlLTIzNjYzNjJhODhjNyIsImlhdCI6MTY1NjY5OTU2MSwiZXhwIjoxNjU2NzAyNTYxfQ.Bp51WI6G-niDK3LWeqajlAvxeu1chsssiDzuwpy-fgM
+###
+POST  http://localhost:3003/recipe
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRiZGMzM2VlLWEwMDUtNGRhZS05NjA4LWRjYjFjNjU4MzIyOSIsImlhdCI6MTY1NjU5NzE3NiwiZXhwIjoxNjU2NjAwMTc2fQ.kZ81gGZBWeZUeh_oOY3WNHsWVwNIK6xfAFu0VOO48gQ
+
+{
+    "title": "file mignon",
+    "description": "pique em cubos, coloque que panela e frite ate dourar"
+}
+###
+GET  http://localhost:3003/recipe/7526ea28-1e2f-40ba-be9b-b97269fa4268
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjRiZGMzM2VlLWEwMDUtNGRhZS05NjA4LWRjYjFjNjU4MzIyOSIsImlhdCI6MTY1NjY5ODUzNSwiZXhwIjoxNjU2NzAxNTM1fQ.vj_TFjxiOBkK3vMNzSaSZZ4c3waEaWC34KWbIZn7PpE
+
